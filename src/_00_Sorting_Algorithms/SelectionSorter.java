@@ -21,12 +21,15 @@ public class SelectionSorter extends Sorter {
 			//3. make another for loop that starts at i + 1 and
 			//   goes through the entire array
 			for (int j = i + 1; j < array.length; j++) {
-			
+
 				//4. if the array element at j is less than the 
 				//   element at index, then set index equal to j
 				if (array[j] < array[index]) {
 					index = j;
+					display.updateDisplay();
+
 				}
+
 			}
 				
 			//5. swap the array element at index with the array element at i

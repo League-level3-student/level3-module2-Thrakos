@@ -11,6 +11,14 @@ class _04_SearchTest {
 	@Test
 	void testLinearSearch() {
 		//1. use the assertEquals method to test your linear search method.
+		_00_LinearSearch ls = new _00_LinearSearch();
+		String[] thing = {"cow", "moo", "ROAR", "cookie", "food", "is", "YUMMY"};
+		assertEquals(3, ls.linearSearch(thing, "cookie"));
+		String[] ting = {"oiewjfoiewj", "oweifjeoiwf", "oudshoiwa", "woeijf"};
+		assertEquals(-1, ls.linearSearch(ting, "om nom nom nom nom. So yummers."));
+		String[] tin = {"Om", "Nom", "Cookies", "And", "Milk", "NOMNOMNOM"};
+		assertEquals(5, ls.linearSearch(tin, "NOMNOMNOM"));
+		assertEquals(-1,ls.linearSearch(tin, "nomnomnom"));
 	}
 
 	@Test

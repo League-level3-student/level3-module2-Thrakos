@@ -36,9 +36,11 @@ public class BogoSorter extends Sorter {
 			array[ran1] = two;
 			array[ran2] = placeholder;
 			
-			display.updateDisplay();
 			
 		}
+		
+		display.updateDisplay();
+
 		
 	}
 	

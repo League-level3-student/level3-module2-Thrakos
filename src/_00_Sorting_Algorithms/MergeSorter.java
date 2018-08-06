@@ -38,6 +38,7 @@ public class MergeSorter extends Sorter {
             //   but only the elements from low to high inclusive
 			for (int i = low; i <= high; i++) {
 				temp[i] = array[i];
+				
 			}
 		
             //7. create three integers called i, j, and k and
@@ -66,6 +67,8 @@ public class MergeSorter extends Sorter {
 				}
                 //16. increase k by 1
  				k++;
+				display.updateDisplay();
+
 			}
 
             //17. make a while loop that runs while i is less than or equal to middle
