@@ -18,11 +18,13 @@ public class BubbleSorter extends Sorter{
 						int placeholder = array[j];
 						array[j] = array[i];
 						array[i] = placeholder;
-						display.updateDisplay();
+				//		display.updateDisplay();
 					}
 				}
 			}
 		}
+		
+		display.updateDisplay();
 		
 	}
 	
